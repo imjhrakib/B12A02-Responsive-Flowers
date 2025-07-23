@@ -5,8 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Flower Shop</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- play cdn -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- noto serif google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Inter google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    .noto-serif {
+      font-family: 'Noto Serif', serif;
+    }
+
+    .inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .color-orange {
+      color: #E95A08;
+    }
+
+    .description-color {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .title-color {
+      color: #000000;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,11 +56,25 @@
         <li class="text-[#8987A1] font-normal"><a href="#shop">Shop</a></li>
         <li class="text-[#8987A1] font-normal"><a href="#about-us">About Us</a></li>
         <li class="text-[#000000] font-normal"><a href="#cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span>Cart ($56)</span>
-        </a></li>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart ($56)</span>
+          </a></li>
       </ul>
     </nav>
+    <div class="flex my-28">
+      <div class="w-1/2 flex flex-col justify-end gap-6">
+        <div class="noto-serif font-bold text-6xl"><span class="title-color">ALWAYS</span>
+          <span class="color-orange">FRESH</span>
+          <h1 class="color-orange mt-5">FLOWERS</h1>
+        </div>
+        <h5 class="description-color inter font-normal text-[18px]">Indulge your senses with the beauty and fragrance of
+          our fresh flower shop. From classic roses to exotic
+          blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</h5>
+      </div>
+      <div class="w-1/2">
+        <img src="./assets/hero-flower.png" alt="">
+      </div>
+    </div>
   </header>
   <main>
 
